@@ -34,7 +34,7 @@ class ProductCreateView(APIView):
             defaults={
                 'name': product_data['name'],
                 'price': product_data['salePriceU'] / 100,
-                'rating': product_data['rating'],
+                'rating': product_data['reviewRating'],
                 'quantity': product_data['totalQuantity'],
             }
         )
