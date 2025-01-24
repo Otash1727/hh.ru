@@ -35,7 +35,7 @@ async def client_request_api(message: Message, state: FSMContext):
         name = product_data['name']
         price = product_data['salePriceU'] / 100
         article_product=product_data['id']
-        rating = product_data['rating']
+        rating = product_data['reviewRating']
         quantity =product_data['totalQuantity']
         await create_product(name,article_product,price,rating,quantity)
         # Формирование ответа пользователю
