@@ -1,0 +1,64 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+env/
+.venv/
+venv/
+ENV/
+env.bak/
+.env/
+
+# Django-related files
+*.log
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Ignore environment variables files
+*.env
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# macOS-specific files
+.DS_Store
+
+# Windows-specific files
+Thumbs.db
+Desktop.ini
+
+# Node.js dependencies (if used)
+node_modules/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Docker
+*.pid
+*.log
+docker-compose.override.yml
+
+# Coverage and testing reports
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.tox/
+.cache/
+
+# Migrations (if you don't want to commit auto-generated files)
+**/migrations/*.py
+!**/migrations/__init__.py

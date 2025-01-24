@@ -1,0 +1,53 @@
+The project delivers the information about the products of  the Wildberries to Telegram users.
+
+---------------------------- To run the project without Docker ---------------------------
+1.	Register the telegram bot from Bot Father ( Save Token) 
+2.	Create new groups for Backup and Log files and Make the bot into the admin of the group. ( save CHANNEL_ ID)
+3.	Activate the env. Command to activate 
+    ---- source env/bin/activate or .\.env\Scripts\Activate -----
+
+4.	Install the dependencies in requirements.txt on your OS. 
+    ---- pip install -r requirements.txt -----
+
+5.	Enter your information to the database of Postgresql 
+    e.g. .env  To reach .env: cd ---- app/Bot/ ----    
+    Reminder:  All the information is included in this file. The code to connect all the migration with the database is \
+    --------- python manage.py makegrations-----------
+    --------- python manage.py migrate --------------
+
+6.  Command of creating Django admin
+    --------  python manage.py createsuperuser -------
+
+7.	The command to run Django is
+    ------ python manage.py runserver --------
+    after this command you see Django online on console. 
+    
+    --->>PS C:\Users\user\Desktop\your_project> python manage.py runserver
+    Watching for file changes with StatReloader
+    Performing system checks...
+
+    System check identified no issues (0 silenced).
+    January 24, 2025 - 21:48:51
+    Django version 5.1.5, using settings 'base.settings' 
+    Starting development server at http://127.0.0.1:8000/
+    Quit the server with CTRL-BREAK. <<--------
+
+
+To get more information about Django project here: https://docs.djangoproject.com/en/5.1/intro/tutorial01/
+
+8.	The command to run Telegram Bot is python manage.py runbot  After this command you see BOT ONLINE … on console. 
+
+------------------------------ To use API------------------------------------
+	You can’t use the API directly to GET or POST information. To do this, you have to use Bearer token. 
+
+1.	Take Bearer TOKEN. http://127.0.0.1:8000/api/token/  Open your own browser. 
+2.	Enter your username and password and get access token copy this 
+3.	You can use API after taking token. 
+    The list of API addresses: ----- cd app/base/urls.py ----------
+
+-------------------------- information about how the bot works---------------
+The bot takes the information from Wildberries and delivers to a user. Plus, It writes down the information about products and users to the database. During every 30 minutes the information in the database is compared to the one in Wildberries and updated. (You can change the time by yourself. You can change it in .env file).
+
+
+
+

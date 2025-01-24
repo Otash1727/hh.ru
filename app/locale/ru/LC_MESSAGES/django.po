@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-24 20:27+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\wildberries\models.py:7
+msgid "name"
+msgstr ""
+
+#: .\wildberries\models.py:8
+msgid "article"
+msgstr ""
+
+#: .\wildberries\models.py:9
+msgid "price"
+msgstr ""
+
+#: .\wildberries\models.py:10
+msgid "rating"
+msgstr ""
+
+#: .\wildberries\models.py:11
+msgid "quantity"
+msgstr ""
+
+#: .\wildberries\models.py:12
+msgid "searching"
+msgstr ""
+
+#: .\wildberries\models.py:14 .\wildberries\models.py:15
+msgid "Products"
+msgstr ""
+
+#: .\wildberries\models.py:23
+msgid "profile_name"
+msgstr ""
+
+#: .\wildberries\models.py:24
+msgid "username"
+msgstr ""
+
+#: .\wildberries\models.py:25
+msgid "user_id"
+msgstr ""
+
+#: .\wildberries\models.py:26 .\wildberries\models.py:37
+msgid "created_at"
+msgstr ""
+
+#: .\wildberries\models.py:28 .\wildberries\models.py:29
+msgid "Accounting Records"
+msgstr ""
+
+#: .\wildberries\models.py:35
+msgid "category"
+msgstr ""
+
+#: .\wildberries\models.py:40
+msgid "User Request History"
+msgstr ""
+
+#: .\wildberries\models.py:41
+msgid "User Request Histories"
+msgstr ""
