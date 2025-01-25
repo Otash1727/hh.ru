@@ -41,14 +41,15 @@ def backup_postgresql_db(host, user, password, database_name):
     return backup_file
 
 # Example usage
-if __name__ == "__main__":
-    host = "localhost"
-    user = "your_username"
-    password = "your_password"
-    database_name = "your_database_name"
-
-    backup_path = backup_postgresql_db(host, user, password, database_name)
-    if backup_path:
-        print(f"Backup successful. File saved at: {backup_path}")
-    else:
-        print("Backup failed.")
+#if __name__ == "__main__":
+#    host = "localhost"
+#    user = "your_username"
+#    password = "your_password"
+#    database_name = "your_database_name"
+#
+#    backup_path = backup_postgresql_db(host, user, password, database_name)
+#    if backup_path:
+#        print(f"Backup successful. File saved at: {backup_path}")
+#    else:
+#        print("Backup failed.")
+#

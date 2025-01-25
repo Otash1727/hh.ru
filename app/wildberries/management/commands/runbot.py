@@ -33,7 +33,19 @@ class Command(BaseCommand):
         except Exception as e:
             print(f"Error starting bot: {e}")
 
-    
+    async def scheduled_task(self):
+        try:
+            print('Scheduled task started.')
+            while True:
+                logging.info("Scheduled task running...")  # Debug log
+                await self.back_up_message()
+                await asyncio.sleep(3600)  # Wait for 10 seconds
+        except asyncio.CancelledError:
+            logging.info("Scheduled task cancelled.")  # Debug log
+           
+        except Exception as e:
+            logging.error(f"Error in scheduled task: {e}")  # Error log
+
     async def back_up_message(self):
         try:
             chat_id =BACK_UP_CHANNEL_ID # Replace with your target chat ID
@@ -49,7 +61,7 @@ class Command(BaseCommand):
     async def main(self):
         await asyncio.gather(
             self.start_bot(),
-            self.back_up_message()
+            self.scheduled_task()
 
         )
     
